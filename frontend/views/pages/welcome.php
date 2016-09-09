@@ -2,7 +2,7 @@
 <?php $this->load->view('header'); ?>
 <div class="main-wraper padd-40-40">
     <div class="col-md-8 col-sm-8 col-xs-8 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 padd-0-40 center">
-        <h4 class="padd-0-40">
+        <h4 class="padd-0-20">
             About us: We are on online dating advice platform for the newyork Area. Fill out our form and we will set you up with the perfect date for you and who ever you are with!
         </h4>
         <div id="form-btn" class="padd-0-220 col-md-12 center">
@@ -21,7 +21,7 @@
         var btn = document.getElementById('form-btn');
         btn.style.display = "none";
         $('html, body').animate({
-        scrollTop: $("#form1").offset().top
+        scrollTop: $("#form1").offset().top - 20
     }, 1000);
     }
 </script>
