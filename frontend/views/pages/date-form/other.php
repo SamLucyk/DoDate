@@ -1,4 +1,4 @@
-<div class="col-md-12 padd-0-20" id="rest" style="display:none;">
+<div class="col-md-12 padd-0-40" id="rest" style="display:none;">
     <h4>Check all that interest you!</h4>
     <div class="col-md-8 left">
         <input type="checkbox" id="ca1" class="css-checkbox med"/>

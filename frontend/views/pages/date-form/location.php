@@ -1,4 +1,4 @@
-<div class="col-md-12 padd-0-20" id="neighborhood">
+<div class="col-md-12" id="neighborhood">
     <h4>Do you have a neighbor hood preference?</h4>
     <div class="col-md-10 left">
         <input type="checkbox" id="cc1" name="manhattan" class="css-checkbox med"/>

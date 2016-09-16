@@ -1,4 +1,4 @@
-<div id="form1" class=" col-xs-6 col-xs-offset-3 padd-0-20">
+<div id="form1" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 padd-0-20">
     <form action="thankyou" method="post">
         <div class="row">
             <?php $this->load->view('pages/date-form/name'); ?>
@@ -33,7 +33,7 @@
         <div class="row col-xs-offset-2">
             <?php $this->load->view('pages/date-form/other'); ?>
         </div>   
-        <div class="col-md-12 center padd-20-0">
+        <div class="col-md-12 center padd-20-20">
             <input type="submit" class="btn btn-info" style="font-size:25px" value="Submit">
         </div>
     </form>
