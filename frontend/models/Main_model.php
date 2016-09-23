@@ -1,42 +1,45 @@
 <?php
+require '../vendor/autoload.php';
+use Mailgun\Mailgun;
+
+
 class Main_model extends CI_Model{
 
     function get( $args = array() ){
-        $data['first'] = $_POST['first'];
-        $data['last'] = $_POST['last'];
-        $data['email'] = $_POST['email'];
-        $data['who'] = $_POST['who'];
-        $data['what'] = $_POST['what'];
-        $this->mail($_POST);
-        return $data; 
+        $data_keys = ['first', 'last', 'email', 'who', 'what', 'date', 'time', 'price', 'location', 'dinner'];
+        $what_vals = array(
+            'none' => "-- Select one --",
+            'drink' => "Drink only",
+            'dinner' => "Dinner, maybe some drinks after.",
+            'rest' => "Try to find me something other than dinner + drinks"
+        );
+        foreach ($data_keys as $key){
+            if (isset($_POST[$key])){
+                $data[$key] = $_POST[$key];
+            }   
+        }
+        $data['what'] = $what_vals[$data['what']];
+        $this->mail($data);
+        return $data;
     }
     
     function mail( $data ){
-        $to = "lucyk.s@husky.neu.edu";
-        $subject = "Someone requested a DoDate!";
-        $string_data = $string_version = implode(' | ', $data);
-        $message = "
-        <html>
-        <head>
-        </head>
-        <body>
-        <p>
-        <b>Name: </b>".$data['first']." ".$data['last']."<br>
-        <b>Email: </b>".$data['email']."<br>
-        <b>Who: </b>".$data['who']."<br>
-        <b>What: </b>".$data['what']."<br>
-        </p>
-        </body>
-        </html>
-        ";
+        # Instantiate the client.
+        $send = true;
+        $mgClient = new Mailgun('key-489a37f2153d20b977b9d9c19dc5eb2d');
+        $domain = "HowDoYouDate.com";
+        $html = $this->load->view('email_templates/new_request', $data, true);
+        $text = $this->load->view('email_templates/new_request', $data, true);
 
-        // Always set content-type when sending HTML email
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-        // More headers
-
-        mail($to,$subject,$string_data,$headers);
+        # Make the call to the client.
+        if ($send){
+        $result = $mgClient->sendMessage("$domain",
+                      array('from'    => 'Do Date, <noreply@HowDoYouDate.com>',
+                            'to'      => 'Sam <lucyk.s@husky.neu.edu>',
+                            'subject' => $data['first'].' requested a DoDate!',
+                            'text'    => $text,
+                            'html'    => $html ));
+        }
     }
 }   
 ?>

@@ -25,43 +25,6 @@ p {
     cursor: pointer;
 }
 
-.padd-40-40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.padd-10-40 {
-    padding-top: 10px;
-    padding-bottom: 40px;
-}
-
-.padd-20-40 {
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-
-
-.padd-100-40 {
-    padding-top: 100px;
-    padding-bottom: 40px;
-}
-
-.padd-0-220 {
-    padding-bottom: 220px;
-}
-
-.padd-0-20 {
-    padding-bottom: 20px;
-}
-
-.padd-20-0 {
-    padding-top: 20px;
-}
-
-.padd-0-40 {
-    padding-bottom: 40px;
-}
-
 .banner {
     position: relative; 
     min-height: 200px; 
@@ -95,4 +58,56 @@ p {
 
 .submit-btn {
     font-size: 25px;
+}
+
+///* PADDING *///
+.padd-0-20 {
+    padding-bottom: 20px;
+}
+
+.padd-0-40 {
+    padding-bottom: 40px;
+}
+
+.padd-0-100 {
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+.padd-0-220 {
+    padding-bottom: 220px;
+}
+
+.padd-10-40 {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.padd-20-0 {
+    padding-top: 20px;
+}
+
+.padd-20-20 {
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.padd-20-40 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.padd-40-20 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.padd-40-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.padd-100-40 {
+    padding-top: 100px;
+    padding-bottom: 40px;
 }

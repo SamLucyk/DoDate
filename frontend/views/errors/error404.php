@@ -1,44 +1,24 @@
+<?php $this->load->view('head'); ?>
 <?php $this->load->view('header'); ?>
-
-    <!-- INNER-BANNER -->
-    <div class="inner-banner style-6" style="min-height:350px;">
-
-        <img class="center-image" src="<?php echo base_url(); ?>img/content/about_us.jpg" alt="">
-        <div class="tour-layer delay-1" style="opacity:.4;"></div>
-
-        <div class="vertical-align">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-8 col-md-offset-2" style="padding-top:100px;">
-                        <ul class="banner-breadcrumb color-white clearfix">
-                            <li><span>ERROR 404</span></li>
-                        </ul>
-                        <h2 class="color-white">NOT FOUND</h2>
-                    </div>
-                </div>
+<div class="main-wraper padd-20-40">
+    <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 padd-0-40">
+        <div class="col-sm-10 col-sm-offset-1 col-xs-12 padd-0-20">
+            <h2 class="center padd-0-20">
+                Oops! Page not found
+            </h2>
+            
+            <div class="col-md-12 center padd-0-40">
+                <a href="<?php echo base_url()?>"><input  class="btn btn-info" style="font-size:25px" value="Home"></a>
             </div>
+            
+            <p>
+               DoDate is a date-planning service – we take the guesswork out of planning the ideal date. Whether you’re swiping right, wining and dining your soulmate, stuck answering, “so what should we do tonight,” or anything in between, we’ve got you covered.
+            </p>
+            <p>
+                We simplify the dating game by planning and reserving everything on your behalf. You tell us what you want on any given day, and we take care of the rest. Fear not, friends, DoDate has arrived. 
+            </p>
         </div>
-
-    </div>
-
-    <!-- DETAIL WRAPPER -->
-    <div class="main-wraper padd-70-70">
-        <div class="container">
-
-            <div class="second-title">
-                <h2>OOPS!</h2>
-            </div>
-
-  			<div class="row">
-  				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                    <p class="lead text-center">The page that you are trying to visit does not exist.</p>
-                    <p class="lead text-center">Please visit our <a href="<?php echo site_url(); ?>">homepage</a> to book your next tour!</p>
-  				</div>
-  			</div>
-
-  		</div>
-  	</div>
-
-    <?php //$this->load->view('front/cta_support.php'); ?>
-
+        
+        
+        
 <?php $this->load->view('footer'); ?>

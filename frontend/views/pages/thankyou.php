@@ -8,7 +8,7 @@
         <p class="padd-0-40">
         We’re working on your date right now! Within an hour you’ll have your plan.<br>If you’re not into it – we’ll make it right.<br>If you like what you see - then we’ll go ahead and book.
         </p>
-        <div class="col-md-12 center">
+        <div class="col-md-12 center padd-0-100">
             <a href="<?php echo base_url()?>"><input  class="btn btn-info" style="font-size:25px" value="Home"></a>
         </div>
     </div>
