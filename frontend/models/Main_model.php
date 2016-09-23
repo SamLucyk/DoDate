@@ -6,7 +6,7 @@ use Mailgun\Mailgun;
 class Main_model extends CI_Model{
 
     function get( $args = array() ){
-        $data_keys = ['first', 'last', 'email', 'who', 'what', 'date', 'time', 'price', 'location', 'dinner'];
+        $data_keys = ['first', 'last', 'email', 'who', 'what', 'date', 'time', 'price', 'location', 'dinner', 'other'];
         $what_vals = array(
             'none' => "-- Select one --",
             'drink' => "Drink only",

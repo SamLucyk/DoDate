@@ -11,35 +11,24 @@
                 <b>When is your date?: </b><?php echo $date;?><br>
                 <b>Price Range: </b><?php echo $price;?><br>
                 
-                <?php if (isset($time)){?>
-                <b>Time of day?: </b><br>  
-                    <?php 
-                        $last = end($time);
-                        foreach ($time as $value) { 
-                        echo $value; 
-                        if (!($value == $last)){?> -- 
-                    <?php }} ?><br>
-                <?php } ?>
-                
-                <?php if (isset($location)){?>
-                <b>Do you have a neighbor hood preference?: </b><br>  
-                    <?php 
-                        $last = end($location);
-                        foreach ($location as $value) { 
-                        echo $value; 
-                        if (!($value == $last)){?> -- 
-                    <?php }} ?><br>
-                <?php } ?>
-                
-                <?php if (isset($dinner)){?>
-                <b>What type of eats are you looking for?: </b><br>  
+                <?php 
+                $options = array(
+                    "Time of day?:" => $time,
+                    "Do you have a neighbor hood preference?:" => $location,
+                    "What type of eats are you looking for?:" => $dinner,
+                    "Check all that interest you!:" => $other,
+                );
+                foreach ($options as $key => $list){
+                    if (isset($list)){?>
+                <b><?php echo $key ?></b><br>  
                     <?php
-                        $last = end($dinner);
-                        foreach ($dinner as $value) { 
+                        $last = end($list);
+                        foreach ($list as $value) { 
                         echo $value; 
                         if (!($value == $last)){?> -- 
                     <?php }} ?><br>
-                <?php } ?>
+                <?php }
+                }?>
                 
             </p>
             </div>
