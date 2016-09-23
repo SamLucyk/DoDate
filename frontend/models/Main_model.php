@@ -35,7 +35,7 @@ class Main_model extends CI_Model{
         if ($send){
         $result = $mgClient->sendMessage("$domain",
                       array('from'    => 'Do Date, <noreply@HowDoYouDate.com>',
-                            'to'      => 'Sam <lucyk.s@husky.neu.edu>',
+                            'to'      => 'Sam <sam@howdoyoudate.com>',
                             'subject' => $data['first'].' requested a DoDate!',
                             'text'    => $text,
                             'html'    => $html ));
