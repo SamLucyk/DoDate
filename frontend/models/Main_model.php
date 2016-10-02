@@ -6,10 +6,10 @@ use Mailgun\Mailgun;
 class Main_model extends CI_Model{
 
     function get( $args = array() ){
-        $data_keys = ['first', 'last', 'email', 'who', 'what', 'date', 'time', 'price', 'location', 'dinner', 'other'];
+        $data_keys = ['first', 'last', 'email', 'who', 'what', 'date', 'time', 'price', 'location', 'dinner', 'other', 'resturant', 'important'];
         $what_vals = array(
             'none' => "-- Select one --",
-            'drink' => "Drink only",
+            'drinks' => "Drink only",
             'dinner' => "Dinner, maybe some drinks after.",
             'rest' => "Try to find me something other than dinner + drinks"
         );
@@ -18,7 +18,16 @@ class Main_model extends CI_Model{
                 $data[$key] = $_POST[$key];
             }   
         }
+        $resturants = ["Restaurants with no reservations (I want time to talk)","Wine and Wine Bars", "Craft Beers", "Craft Cocktails", "Champagne", "Bars With a Speakeasy Feel", "Dive Bars"];
+        $resturant_pairs = array();
+        $ri = 0;
+        foreach ($data['resturant'] as $val) {
+            $resturant_pairs[$resturants[$ri]] = $val;
+            $ri += 1;
+        }
+        
         $data['what'] = $what_vals[$data['what']];
+        $data['resturant'] = $resturant_pairs;
         $this->mail($data);
         return $data;
     }

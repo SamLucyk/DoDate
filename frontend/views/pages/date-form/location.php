@@ -4,15 +4,13 @@
         <?php 
         $count = -1;
         $list = [
-            "Anywhere in downtown Manhattan",
             "East Village",
-            "Financial District",
-            "Lower East Side",
+            "Financial District / Seaport",
+            "Greenwich Village / Noho",
+            "Lower East Side / Chinatown",
             "Meatpacking",
-            "Soho/ Nolita",
-            "West Village",
-            "Greenwich Village",
-            "Noho"
+            "Soho / Nolita",
+            "West Village"
         ];
         foreach ($list as $value) { 
             $count += 1; ?>

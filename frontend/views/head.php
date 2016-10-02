@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet">
     <link href="<?php echo base_url(); ?>css/main.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo base_url(); ?>css/checkboxes/style.css" rel="stylesheet" type="text/css" >

@@ -12,14 +12,20 @@
                 <b>Price Range: </b><?php echo $price;?><br>
                 
                 <?php 
-                $options = array(
+                if (!isset($dinner)) { $dinner = []; }
+                if (!isset($time)) { $time = []; }
+                if (!isset($location)) { $location = []; }
+                if (!isset($other)) { $other = []; }
+
+                $checkboxes = array(
                     "Time of day?:" => $time,
                     "Do you have a neighbor hood preference?:" => $location,
                     "What type of eats are you looking for?:" => $dinner,
-                    "Check all that interest you!:" => $other,
+                    "Check all that interest you!:" => $other
                 );
-                foreach ($options as $key => $list){
-                    if (isset($list)){?>
+                foreach ($checkboxes as $key => $list){
+                    if (isset($list)){
+                        if ($list) {?>
                 <b><?php echo $key ?></b><br>  
                     <?php
                         $last = end($list);
@@ -27,9 +33,15 @@
                         echo $value; 
                         if (!($value == $last)){?> -- 
                     <?php }} ?><br>
-                <?php }
+                <?php } }
                 }?>
-                
+                <b>What are your thoughts on...</b><br>
+                <?php 
+                foreach ($resturant as $key => $val){ ?>
+                        <?php echo $key ?>: <i><?php echo $val ?></i><br>
+                <?php } ?>
+                <b>What is most important to you?: </b><?php echo $important;?><br>
+        
             </p>
             </div>
         </td>

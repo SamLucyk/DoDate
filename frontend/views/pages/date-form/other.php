@@ -4,13 +4,15 @@
         <?php 
         $count = -1;
         $list = [
-            "Movie",
+            "Movies",
             "Bowling",
-            "Spoting event",
-            "Museum",
+            "Spoting events",
+            "Museums",
             "Arts",
+            "History",
+            "Anything active (Bowling, Rock Climbing, etc.)",
             "Anything outdoors",
-            "I'm down for the get down, I'll do whatever you say, my date-planning guru"
+            "I'll do whatever you say"
         ];
         foreach ($list as $value) { 
             $count += 1; ?>

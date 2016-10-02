@@ -7,18 +7,16 @@
         $dinner_list = [
             "Suprise me!",
             "American",
-            "Asian",
+            "East Asian - [Chinese; Japanese; Korean]",
             "French",
             "Indian",
             "Italian",
-            "Japanese",
-            "Latin",
+            "Latin - [Mexican; Cuban; Caribbean]",
             "Mediterranean",
-            "Mexican",
             "Seafood",
             "Small plates of any persuasion",
-            "Thai",
-            "Vietnamese"
+            "Southeast Asian - [Thai; Vietnamese]",
+            "Southern eats"
         ];
         foreach ($dinner_list as $value) { 
             $count += 1; ?>

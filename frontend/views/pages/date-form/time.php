@@ -5,10 +5,9 @@
             <?php 
             $count = -1;
             $list = [
-                "Daytime date",
-                "Late night date",
-                "Evening date",
-                "Please just choose for me!"
+                "Daytime date (before 5:00pm)",
+                "Evening date (5:00pm - 10:00pm)",
+                "Late night date (after 10:00pm)"
             ];
             foreach ($list as $value) { 
                 $count += 1; ?>

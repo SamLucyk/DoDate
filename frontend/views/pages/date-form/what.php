@@ -5,7 +5,7 @@
         <?php 
         $list = array(
             "-- Select one --" => 'none',
-            "Drink only" => 'drink',
+            "Drink only" => 'drinks',
             "Dinner, maybe some drinks after." => 'dinner',
             "Try to find me something other than dinner + drinks" => 'rest'
         );

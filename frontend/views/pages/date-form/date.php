@@ -9,3 +9,10 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker({
+                    format: 'MM/DD/YYYY'
+                });
+    });
+</script>
