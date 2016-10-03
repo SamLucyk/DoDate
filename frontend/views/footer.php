@@ -4,24 +4,24 @@
         function whatSelect() {
             value = document.getElementById("what").value;
             if (value == "rest") {
-                document.getElementById("rest").style.display = "inline";
+                document.getElementById("rest").style.display = "";
                 document.getElementById("dinner").style.display = "none";
                 document.getElementById("drinks").style.display = "none";
-                document.getElementById("neighborhood").style.display = "inline";
+                document.getElementById("neighborhood").style.display = "";
                 document.getElementById("what").style.color = "#000";
             }
             if (value == "drinks") {
                 document.getElementById("rest").style.display = "none";
                 document.getElementById("dinner").style.display = "none";
-                document.getElementById("drinks").style.display = "inline";
-                document.getElementById("neighborhood").style.display = "inline";
+                document.getElementById("drinks").style.display = "";
+                document.getElementById("neighborhood").style.display = "";
                 document.getElementById("what").style.color = "#000";
             }
             if (value == "dinner") {
                 document.getElementById("rest").style.display = "none";
-                document.getElementById("dinner").style.display = "inline";
-                document.getElementById("drinks").style.display = "inline";
-                document.getElementById("neighborhood").style.display = "inline";
+                document.getElementById("dinner").style.display = "";
+                document.getElementById("drinks").style.display = "";
+                document.getElementById("neighborhood").style.display = "";
                 document.getElementById("what").style.color = "#000";
             }
             if (value == "none") {
@@ -39,6 +39,16 @@
             }
             else {
                 document.getElementById("who").style.color = "#000";
+            }
+        }
+    
+        function importantSelect() {
+            value = document.getElementById("important").value;
+            if (value == "none") {
+                document.getElementById("important").style.color = "#bfbfbf";
+            }
+            else {
+                document.getElementById("important").style.color = "#000";
             }
         }
 

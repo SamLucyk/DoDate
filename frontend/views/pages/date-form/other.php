@@ -1,6 +1,6 @@
-<div class="col-md-12 padd-0-40" id="rest" style="display:none;">
+<div class="col-md-12" id="rest" style="display:none;">
     <h4>Check all that interest you!</h4>
-    <div class="col-md-8 left">
+    <div class="left">
         <?php 
         $count = -1;
         $list = [
@@ -10,7 +10,7 @@
             "Museums",
             "Arts",
             "History",
-            "Anything active (Bowling, Rock Climbing, etc.)",
+            "Anything active",
             "Anything outdoors",
             "I'll do whatever you say"
         ];

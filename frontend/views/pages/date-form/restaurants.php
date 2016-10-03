@@ -5,7 +5,7 @@
     $options = ["Restaurants that do not accept reservations (meaning you may have to wait, but we’ll let you know good ways to pass the time)",
                 "Restaurants that are currently a hot ticket (meaning we can get you in, but it might be a weird time)",
                 "Places we like to call “cozy” (usually meaning it’s small, but also an awesome date vibe)",
-                "Any establishment that could be described as \“lively\”",
+                "Any establishment that could be described as “lively”",
                 "Wine and Wine Bars", 
                 "Craft Beers", 
                 "Craft Cocktails", 

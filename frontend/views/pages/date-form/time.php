@@ -1,12 +1,12 @@
 <div class="col-md-12">
     <h4>Times of day?</h4>
     <div class="form-group">
-        <div class="col-md-12 left">
+        <div class="left">
             <?php 
             $count = -1;
             $list = [
                 "Daytime date (before 5:00pm)",
-                "Evening date (5:00pm - 10:00pm)",
+                "Evening date (5:00 - 10:00pm)",
                 "Late night date (after 10:00pm)"
             ];
             foreach ($list as $value) { 

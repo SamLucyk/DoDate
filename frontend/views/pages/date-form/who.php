@@ -1,6 +1,6 @@
 <div class="col-md-12">
     <h4>Who are you with?</h4>
-        <div class="form-group">
+        <div class="form-group bold">
             <select onchange="whoSelect()" class="form-control pointer" name="who" id="who" style="color:#bfbfbf;">
                 <option value="none">-- Select one --</option>
                 <option>Flying Solo</option>

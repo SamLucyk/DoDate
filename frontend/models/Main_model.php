@@ -22,8 +22,10 @@ class Main_model extends CI_Model{
         $resturant_pairs = array();
         $ri = 0;
         foreach ($data['resturant'] as $val) {
-            $resturant_pairs[$resturants[$ri]] = $val;
-            $ri += 1;
+            if (isset($val)){
+                $resturant_pairs[$resturants[$ri]] = $val;
+                $ri += 1;
+            }
         }
         
         $data['what'] = $what_vals[$data['what']];

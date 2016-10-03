@@ -1,6 +1,6 @@
 <div class="col-md-12" id="neighborhood">
-    <h4>Do you have a neighbor hood preference?</h4>
-    <div class="col-md-10 left">
+    <h4>Do you have a neighborhood preference?</h4>
+    <div class="left">
         <?php 
         $count = -1;
         $list = [

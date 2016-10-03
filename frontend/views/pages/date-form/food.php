@@ -1,7 +1,7 @@
 <!--If Dinner + Drinks -->
 <div class="col-md-12" id="dinner" style="display:none;">
     <h4>What type of eats are you looking for?</h4>
-    <div class="col-md-10 left">
+    <ul class="left">
         <?php 
         $count = -1;
         $dinner_list = [
@@ -20,8 +20,10 @@
         ];
         foreach ($dinner_list as $value) { 
             $count += 1; ?>
-            <input name="dinner[<?php echo strval($count); ?>]" type="checkbox" id="cb<?php echo strval($count); ?>" class="css-checkbox med" value="<?php echo $value; ?>"/>
-            <label for="cb<?php echo strval($count); ?>" class="css-label med elegant" ><?php echo $value; ?></label><br>
+            <li>
+                <input name="dinner[<?php echo strval($count); ?>]" type="checkbox" id="cb<?php echo strval($count); ?>" class="css-checkbox med" value="<?php echo $value; ?>"/>
+                <label for="cb<?php echo strval($count); ?>" class="css-label med elegant" ><?php echo $value; ?></label>
+            </li>
         <?php } ?>
-    </div>
+    </ul>
 </div>
