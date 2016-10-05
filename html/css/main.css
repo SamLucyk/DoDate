@@ -10,6 +10,15 @@
     background-blend-mode: screen;
 }
 
+.transbox-b h4 {
+    color: #51C3C2;
+}
+
+.transbox h1 {
+    color: #51C3C2;
+    text-decoration: underline;
+}
+
 .form-group {
     font-weight: bold;
 }
@@ -52,7 +61,7 @@
 }
 
 body {
-    font-family: Nobile;
+    font-family: Nobile !important;
 	line-height: 30px;
 }
 
@@ -127,7 +136,8 @@ p {
 
 .button {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 6px;
+    padding-bottom: 2px;
     margin-bottom: 0;
     font-size: 14px;
     font-weight: 400;

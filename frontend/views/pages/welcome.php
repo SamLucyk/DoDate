@@ -1,15 +1,16 @@
 <?php $this->load->view('head'); ?>
 <?php $this->load->view('header'); ?>
 <div>
-    <div class="main-wraper padd-20-40">
-    <div id="about" class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 padd-0-40" style="display:none;">
-        <?php $this->load->view('pages/front/about'); ?>
-    </div>
+    <div class="main-wraper padd-0-40">
+        <div id="about" class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 padd-40-40" style="display:none; background:url('<?php echo base_url(); ?>/img/nyc.jpg') no-repeat right top; background-position-y:30%; background-attachment: fixed;">
+            <?php $this->load->view('pages/front/about'); ?>
+        </div>
+        <div class="white-text col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 padd-40-40" style="display:none; background:url('<?php echo base_url(); ?>/img/nyc.jpg') no-repeat right top; background-position-y:30%; background-attachment: fixed;" id='date-form'>
+            <?php $this->load->view('pages/date-form'); ?>
+        </div>
     </div>
     
-    <div class="white-text" id='date-form' style="display:none;">
-        <?php $this->load->view('pages/date-form'); ?>
-    </div>
+    
     
 </div>
 
