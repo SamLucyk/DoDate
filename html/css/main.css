@@ -97,7 +97,24 @@ p {
     padding-top: 140px;
     font-size: 50px;
     font-weight: 500;
-        
+}
+
+
+.banner .logo {
+    width: 350px;
+    background-size:cover;
+}
+
+.banner .title-sm {
+    color: aliceblue;
+    padding-top: 70px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.banner .logo-sm {
+    width: 250px;
+    background-size:cover;
 }
 
 
@@ -109,10 +126,6 @@ p {
     background-size: cover;
 }
 
-.banner .logo {
-    width: 350px;
-    background-size:cover;
-}
 
 .white-text {
     color:white;
