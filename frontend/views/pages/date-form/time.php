@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <h4>Times of day?</h4>
+    <h4>Time of day?</h4>
     <div class="form-group">
         <div class="left">
             <?php 

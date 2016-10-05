@@ -7,7 +7,7 @@
             "-- Select one --" => 'none',
             "Drink only" => 'drinks',
             "Dinner, maybe some drinks after." => 'dinner',
-            "Try to find me something other than dinner + drinks" => 'rest'
+            "Try to find me something other than Dinner + Drinks" => 'rest'
         );
         foreach ($list as $key => $value) { ?>
             <option value="<?php echo $value; ?>"><?php echo $key; ?></option>

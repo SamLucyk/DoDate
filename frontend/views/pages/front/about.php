@@ -1,6 +1,6 @@
 <div class="transbox padd-0-20 col-sm-10 col-sm-offset-1 col-xs-12">
     <h1 class="center padd-0-20">
-        ABOUT US
+        About us
     </h1>
     <p>
        DoDate is a date-planning service – we take the guesswork out of planning the ideal date. Whether you’re swiping right, wining and dining your soulmate, stuck answering, “so what should we do tonight,” or anything in between, we’ve got you covered.
@@ -9,7 +9,7 @@
         We simplify the dating game by planning and reserving everything on your behalf. You tell us what you want on any given day, and we take care of the rest. Fear not, friends, DoDate has arrived. 
     </p>
     <h1 class="center padd-0-20">
-        HOW THIS WORKS
+        How this works
     </h1>
    <ul>
       <li><p>It’s free.</p></li>
