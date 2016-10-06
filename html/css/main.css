@@ -85,7 +85,8 @@ p {
 .banner {
     position: relative; 
     text-align: center; 
-    height: 650px;
+    background-size: cover;
+    height: 700px;
     background-position: center;
     width: auto;
     filter: blur(5);

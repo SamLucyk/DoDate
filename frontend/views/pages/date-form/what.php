@@ -5,8 +5,8 @@
         <?php 
         $list = array(
             "-- Select one --" => 'none',
-            "Drink only" => 'drinks',
-            "Dinner, maybe some drinks after." => 'dinner',
+            "Drinks only" => 'drinks',
+            "Dinner, maybe some drinks after" => 'dinner',
             "Try to find me something other than Dinner + Drinks" => 'rest'
         );
         foreach ($list as $key => $value) { ?>

@@ -8,8 +8,8 @@
             "Financial District / Seaport",
             "Greenwich Village / Noho",
             "Lower East Side / Chinatown",
-            "Meatpacking",
             "Soho / Nolita",
+            "Tribeca",
             "West Village"
         ];
         foreach ($list as $value) { 

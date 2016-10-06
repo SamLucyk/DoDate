@@ -7,15 +7,15 @@
         $dinner_list = [
             "Suprise me!",
             "American",
-            "East Asian - [Chinese; Japanese; Korean]",
+            "East Asian - (Chinese; Japanese; Korean)",
             "French",
             "Indian",
             "Italian",
-            "Latin - [Mexican; Cuban; Caribbean]",
+            "Latin - (Mexican; Cuban; Caribbean)",
             "Mediterranean",
             "Seafood",
             "Small plates of any persuasion",
-            "Southeast Asian - [Thai; Vietnamese]",
+            "Southeast Asian - (Thai; Vietnamese)",
             "Southern eats"
         ];
         foreach ($dinner_list as $value) { 

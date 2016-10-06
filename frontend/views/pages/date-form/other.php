@@ -6,7 +6,7 @@
         $list = [
             "Movies",
             "Bowling",
-            "Spoting events",
+            "Sporting events",
             "Museums",
             "Arts",
             "History",

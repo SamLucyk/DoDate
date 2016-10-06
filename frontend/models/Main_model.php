@@ -9,8 +9,8 @@ class Main_model extends CI_Model{
         $data_keys = ['first', 'last', 'email', 'who', 'what', 'date', 'time', 'price', 'location', 'dinner', 'other', 'resturant', 'important'];
         $what_vals = array(
             'none' => "-- Select one --",
-            'drinks' => "Drink only",
-            'dinner' => "Dinner, maybe some drinks after.",
+            'drinks' => "Drinks only",
+            'dinner' => "Dinner, maybe some drinks after",
             'rest' => "Try to find me something other than dinner + drinks"
         );
         foreach ($data_keys as $key){

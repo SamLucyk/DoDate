@@ -6,7 +6,7 @@
                 <option>Flying Solo</option>
                 <option>A date, and it's a new thing, so make me look good.</option>
                 <option>A date, but not the first one.</option>
-                <option>A longtime partner, please save me from another night of "so what should we do this weekend"</option>
+                <option>A longtime partner, help me out of the 'I don't care, what do YOU want to do' discussion.</option>
                 <option>I'm not into labels, don't make this weird.</option>
             </select>
         </div>
