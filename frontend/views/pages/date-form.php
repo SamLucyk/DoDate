@@ -38,7 +38,8 @@
                 <?php $this->load->view('pages/date-form/important'); ?>
             </div>
             <div class="col-md-12 center">
-                <input type="submit" class="button button-info" style="font-size:25px" value="Submit">
+                <input type="submit" class="button button-info" style="padding-left: 15px;
+    padding-right: 15px;" value="Submit">
             </div>
         </div>
     </form>

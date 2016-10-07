@@ -5,7 +5,7 @@
         $count = -1;
         $list = [
             "Movies",
-            "Bowling",
+            "Music",
             "Sporting events",
             "Museums",
             "Arts",

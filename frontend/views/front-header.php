@@ -5,10 +5,10 @@
         </div>
         <div class="row col-md-12 padd-60-0">
             <div class="col-md-4 col-md-offset-2 center">
-                <a onclick="display_about()"><input id="about-btn" class="button button-info" style="font-size:25px" value="How Does This Work?"></a>
+                <a onclick="display_about()"><input id="about-btn" class="button button-info" value="How Does This Work?"></a>
             </div>
             <div class="col-md-4 center">
-                <a onclick="display_form()"><input id="form-btn" class="button button-info" style="font-size:25px" value="Let's Get Planning!"></a>
+                <a onclick="display_form()"><input id="form-btn" class="button button-info" value="Let's Get Planning!"></a>
             </div>
         </div>
     </div>

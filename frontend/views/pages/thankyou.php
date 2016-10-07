@@ -10,7 +10,7 @@
                         Thank you <?php echo $first; ?>!
                     </h1>
                     <p>
-                        We’re working on your date right now! Within an hour you’ll have your plan.<br>If you’re not into it – we’ll make it right.<br>If you like what you see - then we’ll go ahead and book.
+                        We’re working on your date right now! We'll email you soon with the plan.<br>If you’re not into it – we’ll make it right.<br>If you like what you see - then we’ll go ahead and book.
                     </p>
                 </div>
                     <div class="col-md-12 center padd-20-0">

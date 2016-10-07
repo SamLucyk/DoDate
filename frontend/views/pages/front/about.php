@@ -21,7 +21,7 @@
         Right now we’re keeping our services to below 14th Street in Manhattan.  We’re working on the rest of Manhattan and the outer boroughs in our quest for world domination, and an app, so stay tuned for updates!
     </p>
     <div class="col-md-12 center">
-        <a onclick="display_form()"><input id="form-btn" class="button button-info" style="font-size:25px" value="Let's Get Planning!"></a>
+        <a onclick="display_form()"><input id="form-btn" class="button button-info" value="Let's Get Planning!"></a>
     </div>
     <div class="col-md-12 center" style="font-size:70%; padding-top:20px">
         Banner Photo: iStock; Lower Photo: Taylor Donohue Images; Logo: Kayla Colby Graphic Design
